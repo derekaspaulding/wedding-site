@@ -1,0 +1,104 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  // @background-primary: #cfa80c;
+  // @background-secondary: #d6ad09;
+  margin: 0;
+  padding: 0;
+
+  // background-image: radial-gradient(
+  //   circle,
+  //   @background-primary,
+  //   @background-secondary
+  // );
+
+  // background: repeating-linear-gradient(
+  //   to right,
+  //   @background-primary,
+  //   @background-primary 10px,
+  //   @background-secondary 10px,
+  //   @background-secondary 20px
+  // );
+  // background: repeating-linear-gradient(
+  //   to right,
+  //   #06284c,
+  //   #06284c 10px,
+  //   #063D4D 10px,
+  //   #063D4D 20px,
+  // );
+}
+
+.content {
+  background-color: #fcfcfc;
+  width: 90%;
+  margin: 50px auto;
+  padding: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 1050px;
+}
+
+.names {
+  color: #06284c;
+  font-family: "Fredericka the Great", cursive;
+  font-weight: normal;
+  font-size: 55pt;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 0;
+  text-align: center;
+  line-height: 1.15em;
+  width: 80%;
+
+  @media screen and (max-width: 770px) {
+    font-size: 45pt;
+  }
+
+  @media screen and (max-width: 640px) {
+    font-size: 35pt;
+  }
+
+  @media screen and (max-width: 510px) {
+    font-size: 25pt;
+  }
+}
+
+.navContainer {
+  display: flex;
+  width: 85%;
+  max-width: 1000px;
+  justify-content: space-between;
+  margin: 20px auto;
+  font-size: 16pt;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.navCollapsed {
+  height: 62px;
+}
+
+.navLink,
+.overflowButton {
+  padding: 5px 10px;
+  text-decoration: none;
+  // color: #db7948;
+  color: #d76c37;
+  font-family: "Josefin Slab", serif;
+  font-weight: bolder;
+  text-align: center;
+  vertical-align: middle;
+  margin: auto;
+}
+
+.overflowButton {
+  background: none;
+  border: none;
+  font-size: 16pt;
+  width: 100%;
+  text-align: center;
+  margin-top: -20px;
+  margin-bottom: 15px;
+}
