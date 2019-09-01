@@ -44,31 +44,40 @@ const Layout = ({ children }) => {
         </h1>
 
         {isDev && (
-          <nav className={navClasses.join(" ")}>
-            <Link className={styles.navLink} to="/">
-              Welcome
-            </Link>
-            <Link devOnly={true} className={styles.navLink} to="/story">
-              Our Story
-            </Link>
-            <Link className={styles.navLink} to="/location">
-              When & Where
-            </Link>
-            <Link devOnly={true} className={styles.navLink} to="/wedding-party">
-              Wedding Party
-            </Link>
-            <Link devOnly={true} className={styles.navLink} to="/registry">
-              Registry
-            </Link>
-            <Link devOnly={true} className={styles.navLink} to="/faq">
-              FAQ
-            </Link>
-          </nav>
-        )}
-        {isOverflowed && (
-          <button className={styles.overflowButton} onClick={toggleCollapsed}>
-            {isCollapsed ? "More..." : "Less..."}
-          </button>
+          <>
+            <nav className={navClasses.join(" ")}>
+              <Link className={styles.navLink} to="/">
+                Welcome
+              </Link>
+              <Link devOnly={true} className={styles.navLink} to="/story">
+                Our Story
+              </Link>
+              <Link className={styles.navLink} to="/location">
+                When & Where
+              </Link>
+              <Link
+                devOnly={true}
+                className={styles.navLink}
+                to="/wedding-party"
+              >
+                Wedding Party
+              </Link>
+              <Link devOnly={true} className={styles.navLink} to="/registry">
+                Registry
+              </Link>
+              <Link devOnly={true} className={styles.navLink} to="/faq">
+                FAQ
+              </Link>
+            </nav>
+            {isOverflowed && (
+              <button
+                className={styles.overflowButton}
+                onClick={toggleCollapsed}
+              >
+                {isCollapsed ? "More..." : "Less..."}
+              </button>
+            )}
+          </>
         )}
       </header>
 
