@@ -7,7 +7,8 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "start": "GATSBY_ENV=\"dev\" npm run develop",
+    "start": "npm run develop",
+    "start:dev": "GATSBY_ENV=\"dev\" npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
