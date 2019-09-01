@@ -1,1 +1,1 @@
-export const isDev = process.env.GATSBY_ENV !== "dev";
+export const isDev = process.env.GATSBY_ENV === "dev";
